@@ -1,1 +1,10 @@
-<p>menu works!</p>
+<ul class="list-group">
+  <li
+    *ngFor="let item of menuItems"
+    [routerLink]="item.ruta"
+    routerLinkActive="active"
+    class="list-group-item mb-1"
+  >
+    {{ item.nombre }}
+  </li>
+</ul>
